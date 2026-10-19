@@ -1,0 +1,20 @@
+{
+  "name": "rasalore-ai",
+  "version": "1.0.0",
+  "description": "Cultural Menu Translation & Allergen Intelligence Studio powered by Google Gemma 2",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "start": "npx -y serve . -l 3000"
+  },
+  "keywords": [
+    "gemma-2",
+    "ollama",
+    "allergen-intelligence",
+    "cultural-menu",
+    "side-hustle",
+    "hacktoberfest"
+  ],
+  "author": "RasaLore AI Team",
+  "license": "MIT"
+}

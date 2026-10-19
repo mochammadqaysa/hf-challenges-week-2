@@ -1,0 +1,43 @@
+{
+  "id": "dish-gado-gado",
+  "originalName": "Gado-Gado Batavia",
+  "regionalOrigin": "Jakarta (Betawi)",
+  "priceText": "IDR 40.000",
+  "rawIngredients": "cabbage, long beans, bean sprouts, tofu, tempeh, hard-boiled egg, peanut sauce, emping crackers,",
+  "culturalNarrative": {
+    "en": "A revered Betawi culinary masterpiece of blanched local market vegetables, golden fried tofu, and artisanal tempeh, generously bathed in a velvety roasted peanut dressing infused with kaffir lime and palm sugar,",
+  },
+  "flavorProfile": {
+    "descriptors": [
+      "Velvety Peanuts",
+      "Savory Palm Sugar",
+      "Fresh Crisp Greens",
+      "Subtle Lime Zest",
+    ],
+    "primaryTaste": "Rich, Sweet & Nutty Savory",
+    "spiceLevel": "Mild",
+  },
+  "allergenFlags": [
+    {
+      "allergen": "Peanuts",
+      "severity": "CRITICAL_WARNING",
+      "sourceIngredient": "peanut sauce",
+      "isImplicit": false,
+      "advisoryNote": "Core dressing crafted from freshly roasted ground peanuts.",
+    },
+    {
+      "allergen": "Soy",
+      "severity": "DIETARY_NOTICE",
+      "sourceIngredient": "tofu, tempeh",
+      "isImplicit": false,
+      "advisoryNote": "Contains fermented soy cakes (tempeh) and soy bean curd (tofu).",
+    },
+  ],
+  "dietaryTags": [
+    "Vegetarian",
+    "Halal-Friendly",
+    "Dairy-Free",
+  ],
+  "requiresKitchenVerification": false,
+  "status": "ENRICHED",
+}

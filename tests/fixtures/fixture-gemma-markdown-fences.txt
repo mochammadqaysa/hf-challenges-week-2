@@ -1,0 +1,49 @@
+Certainly! As a culinary historian and food safety auditor, here is the structured analysis for Rawon Surabaya:
+
+```json
+{
+  "id": "dish-rawon-surabaya",
+  "originalName": "Rawon Surabaya",
+  "regionalOrigin": "East Java",
+  "priceText": "IDR 65.000",
+  "rawIngredients": "beef shank, kluwek, lemongrass, galangal, shallots, garlic, bean sprouts, salted egg, sambal terasi",
+  "culturalNarrative": {
+    "en": "A legendary East Javanese heritage stew celebrated for its deep, pitch-black broth infused with fermented kluwek nuts, simmered with tender beef shank and served alongside crisp short bean sprouts and salted duck egg."
+  },
+  "flavorProfile": {
+    "descriptors": [
+      "Earthy Kluwek",
+      "Savory Beef Umami",
+      "Aromatic Lemongrass",
+      "Subtle Nutty Bitter"
+    ],
+    "primaryTaste": "Deeply Savory, Earthy & Complex",
+    "spiceLevel": "Mild"
+  },
+  "allergenFlags": [
+    {
+      "allergen": "Crustaceans",
+      "severity": "CRITICAL_WARNING",
+      "sourceIngredient": "sambal terasi",
+      "isImplicit": true,
+      "advisoryNote": "Contains fermented shrimp paste (terasi) in the accompanying sambal condiment."
+    },
+    {
+      "allergen": "Egg",
+      "severity": "DIETARY_NOTICE",
+      "sourceIngredient": "salted egg",
+      "isImplicit": false,
+      "advisoryNote": "Accompanied by traditional cured salted duck egg."
+    }
+  ],
+  "dietaryTags": [
+    "Halal-Friendly",
+    "Dairy-Free",
+    "Nut-Free"
+  ],
+  "requiresKitchenVerification": false,
+  "status": "ENRICHED"
+}
+```
+
+I hope this helps your restaurant patrons appreciate the heritage of Rawon! Let me know if you need more dishes.

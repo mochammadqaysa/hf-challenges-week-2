@@ -1,0 +1,26 @@
+{
+  "id": "dish-kopi-tubruk",
+  "originalName": "Kopi Tubruk Robusta",
+  "regionalOrigin": "Dampit, East Java",
+  "priceText": "IDR 28.000",
+  "rawIngredients": "coarse Dampit robusta grounds, boiling volcanic spring water, raw cane sugar",
+  "culturalNarrative": {
+    "en": "The quintessential Indonesian heritage coffee ritual, brewed unfiltered where fine grounds steep directly in boiling water, yielding intense dark chocolate aromatics."
+  },
+  "flavorProfile": {
+    "descriptors": [
+      "Dark Cocoa",
+      "Earthy Cedar",
+      "Heavy Body"
+    ],
+    "primaryTaste": "Bold, Earthy & Smoky",
+    "spiceLevel": "None"
+  },
+  "allergenFlags": [
+    {
+      "allergen": "Dairy",
+      "severity": "DIETARY_NOTICE",
+      "sourceIngredient": "None",
+      "isImplicit": false,
+      "advisoryNote": "Naturally dairy-free black brew."
+    }

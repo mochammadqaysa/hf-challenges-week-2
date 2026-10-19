@@ -1,0 +1,51 @@
+{
+  "id": "dish-bebek-betutu",
+  "originalName": "Bebek Betutu",
+  "regionalOrigin": "Gianyar, Bali",
+  "priceText": "IDR 125.000",
+  "rawIngredients": "duck, cassava leaves, lemongrass, shallots, garlic, red chili, candlenut, turmeric, ginger, galangal, shrimp paste (terasi)",
+  "culturalNarrative": {
+    "en": "A revered Balinese ceremonial dish featuring tender duck slow-braised and roasted for hours in traditional bumbu genep spice paste, wrapped tightly in aromatic banana and cassava leaves.",
+    "ja": "何時間もかけて伝統的なスパイスペースト（ブンブ・グネップ）でじっくりと煮込み、バナナの葉で包んで蒸し焼きにした、バリ島の伝統的な儀式用のアヒル料理です。",
+    "zh": "一道尊贵的巴厘岛传统节庆鸭肉料理，将鸭肉包裹在芳香的香蕉叶和木薯叶中，与秘制Bumbu Genep香料长时间慢炖慢烤，肉质酥烂入味。",
+    "fr": "Un plat de canard cérémoniel balinais emblématique, mijoté lentement puis rôti pendant des heures dans une pâte d'épices bumbu genep, enveloppé de feuilles de bananier parfumées."
+  },
+  "flavorProfile": {
+    "descriptors": [
+      "Aromatic Lemongrass",
+      "Smoky Galangal",
+      "Warm Turmeric",
+      "Savory Shallots"
+    ],
+    "primaryTaste": "Deeply Fragrant, Savory & Earthy",
+    "spiceLevel": "Medium"
+  },
+  "allergenFlags": [
+    {
+      "allergen": "Crustaceans",
+      "severity": "CRITICAL_WARNING",
+      "sourceIngredient": "shrimp paste (terasi)",
+      "isImplicit": true,
+      "advisoryNote": "Contains traditional fermented shrimp paste (terasi) ground into the base aromatic spice paste."
+    },
+    {
+      "allergen": "TreeNuts",
+      "severity": "CRITICAL_WARNING",
+      "sourceIngredient": "candlenut (kemiri)",
+      "isImplicit": true,
+      "advisoryNote": "Contains candlenut (kemiri), an Indonesian tree nut used as a culinary thickening and richness agent."
+    }
+  ],
+  "dietaryTags": [
+    "Halal-Friendly",
+    "Gluten-Free",
+    "Dairy-Free"
+  ],
+  "requiresKitchenVerification": false,
+  "status": "ENRICHED",
+  "tokensConsumed": {
+    "promptTokens": 450,
+    "completionTokens": 320,
+    "totalTokens": 770
+  }
+}

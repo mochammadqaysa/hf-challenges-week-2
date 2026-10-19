@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RasaLore AI — Cultural Menu Translation & Allergen Intelligence Studio</title>
+  <meta name="description" content="Local-first Cultural Menu Translation and Allergen Intelligence Studio powered by Google Gemma 2 open-weight models.">
+  
+  <!-- Typography: Playfair Display & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&display=swap" rel="stylesheet">
+
+  <!-- Core Glassmorphism Styling -->
+  <link rel="stylesheet" href="src/styles/main.css">
+
+  <!-- Commercial Print Stylesheet (Phase 4 TASK-401) -->
+  <link rel="stylesheet" href="src/styles/print.css" media="print">
+</head>
+<body>
+  <!-- Ambient Glow Effect -->
+  <div class="ambient-glow" aria-hidden="true"></div>
+
+  <!-- Header Navigation -->
+  <header class="site-header">
+    <div class="container header-content">
+      <a href="#" class="brand">
+        <div class="brand__logo">🍲</div>
+        <div>
+          <h1 class="brand__title">Rasa<span>Lore</span> AI</h1>
+          <span class="brand__subtitle">Cultural Menu & Allergen Studio</span>
+        </div>
+      </a>
+
+      <div class="header-status-pill" id="inference-status-pill" title="Phase 1: Pre-Cached Golden Studio (< 500ms zero latency)">
+        <span class="pulse-indicator"></span>
+        <span id="status-text">Golden Studio (Instant Offline)</span>
+      </div>
+
+      <div class="header-actions">
+        <button type="button" class="btn-open-settings" id="btn-open-settings" title="Configure optional Hugging Face Serverless token for remote fallback">
+          <span>⚙️</span> Cloud Fallback
+        </button>
+        <span class="header-tag">Google Gemma 2 × Ollama</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="container">
+    <!-- Non-blocking CORS & Connection Guidance Banner Container -->
+    <div id="cors-banner-container" aria-live="polite"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero__eyebrow">
+        <span>🇮🇩</span> Open-Source AI Side Hustle • Best Use of Gemma
+      </div>
+      <h2 class="hero__title">
+        Preserve Culinary Heritage. <span class="highlight-amber">Protect Every Diner.</span>
+      </h2>
+      <p class="hero__description">
+        Replace unappetizing literal translations with rich cultural narratives, structured sensory flavor profiles, and proactive implicit allergen flags. Powered by Google Gemma 2 running 100% locally on your machine.
+      </p>
+
+      <!-- Preset Navigation Bar -->
+      <div class="presets-section">
+        <div class="presets-nav" role="tablist" aria-label="Curated Culinary Presets">
+          <button type="button" class="btn-preset active" data-preset-id="bali-bistro" role="tab" aria-selected="true">
+            <span class="btn-preset__icon">🌴</span>
+            <span>Bali Tropical Bistro</span>
+          </button>
+          <button type="button" class="btn-preset" data-preset-id="warung-nusantara" role="tab" aria-selected="false">
+            <span class="btn-preset__icon">🍲</span>
+            <span>Warung Nusantara Autentik</span>
+          </button>
+          <button type="button" class="btn-preset" data-preset-id="specialty-coffee" role="tab" aria-selected="false">
+            <span class="btn-preset__icon">☕</span>
+            <span>Specialty Coffee & Heritage Sweets</span>
+          </button>
+        </div>
+
+        <!-- Active Preset Info Banner -->
+        <div class="preset-banner">
+          <div class="preset-banner__info">
+            <h3 id="preset-banner-title">🌴 Bali Tropical Bistro</h3>
+            <p id="preset-banner-desc">Traditional Balinese heritage recipes with aromatic bumbu genep, coconut, and coastal spice notes.</p>
+          </div>
+          <div class="preset-banner__meta">
+            <span class="badge badge--origin" id="preset-banner-region">Bali, Indonesia</span>
+            <span class="badge badge--success">Verified Golden Records</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Dish Input Studio (Phase 2 TASK-205) -->
+    <section class="custom-dish-section" aria-label="Add Custom Heritage Dish">
+      <div class="custom-dish-header">
+        <div class="custom-dish-title-group">
+          <h3><span>✨</span> Add Custom Heritage Dish</h3>
+          <p>Input raw kitchen notes or traditional menu items to dispatch to the Gemma 2 FIFO enrichment queue.</p>
+        </div>
+        <div class="custom-dish-badge">
+          <span class="badge badge--origin">FIFO Queue (Concurrency = 1)</span>
+        </div>
+      </div>
+
+      <form id="custom-dish-form" class="custom-dish-form">
+        <div class="form-grid-3">
+          <div class="form-field">
+            <label for="input-dish-name">Dish Name <span class="required">*</span></label>
+            <input type="text" id="input-dish-name" name="name" required placeholder="e.g., Gudeg Jogja" autocomplete="off">
+          </div>
+          <div class="form-field">
+            <label for="input-dish-region">Regional Origin</label>
+            <input type="text" id="input-dish-region" name="regionalOrigin" placeholder="e.g., Yogyakarta, Central Java" autocomplete="off">
+          </div>
+          <div class="form-field">
+            <label for="input-dish-price">Price Display</label>
+            <input type="text" id="input-dish-price" name="priceText" placeholder="e.g., IDR 45.000" autocomplete="off">
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label for="input-dish-ingredients">Kitchen Ingredients & Spice Notes (detects implicit allergens)</label>
+          <textarea id="input-dish-ingredients" name="rawIngredients" rows="2" placeholder="e.g., young jackfruit, palm sugar, coconut milk, teak leaves, hard-boiled eggs, tofu, sambal krecek (cow skin, chili, terasi)"></textarea>
+        </div>
+
+        <div class="form-actions">
+          <div class="form-hint">
+            <span>🛡️</span> Air-Gapped Local Inference • Auto-isolates anomalies to FAILED_ANOMALY
+          </div>
+          <button type="submit" class="btn-enrich-submit" id="btn-submit-dish">
+            <span class="btn__icon">⚡</span> Enrich Dish with Gemma 2
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Interactive Queue Progress Bar -->
+    <div class="queue-progress-container" id="queue-progress-container" style="display: none;" aria-live="polite">
+      <div class="queue-progress-header">
+        <div class="queue-progress-text" id="queue-progress-text">
+          <span>⏳</span> Processing item in queue...
+        </div>
+        <div class="queue-progress-count" id="queue-progress-count">
+          0 / 0
+        </div>
+      </div>
+      <div class="queue-progress-track">
+        <div class="queue-progress-fill" id="queue-progress-fill" style="width: 0%;"></div>
+      </div>
+    </div>
+ 
+    <!-- Side Hustle Commercial Margin Calculator (Phase 3 TASK-301) -->
+    <div id="margin-widget-container"></div>
+
+    <!-- Production Export Studio: Print & POS JSON Action Bar (Phase 4 TASK-402) -->
+    <div id="export-studio-container"></div>
+
+    <!-- Studio Toolbar: Multilingual Switcher & Stats -->
+    <section class="studio-toolbar" aria-label="Studio Controls">
+      <div class="language-switch-group">
+        <span class="toolbar-label">Narrative Language:</span>
+        <button type="button" class="lang-btn active" data-lang="en">🇺🇸 English</button>
+        <button type="button" class="lang-btn" data-lang="ja">🇯🇵 日本語</button>
+        <button type="button" class="lang-btn" data-lang="zh">🇨🇳 中文</button>
+        <button type="button" class="lang-btn" data-lang="fr">🇫🇷 Français</button>
+      </div>
+
+      <div class="studio-stats">
+        <span class="stat-pill" id="dish-count-stat">4 Heritage Dishes</span>
+        <span class="stat-pill" id="latency-stat">⚡ Rendered in < 500ms</span>
+      </div>
+    </section>
+
+    <!-- Enriched Dish Cards Grid Container -->
+    <section class="studio-display" aria-label="Enriched Menu Studio">
+      <!-- Elegant Physical Table Insert Print Header (AC-011) -->
+      <header class="print-only-header" aria-hidden="true">
+        <h1 class="print-only-header__brand">Rasa<span>Lore</span> AI</h1>
+        <p class="print-only-header__subtitle" id="print-header-subtitle">Cultural Culinary Heritage Menu & Allergen Intelligence</p>
+        <div class="print-only-header__meta">
+          <span id="print-header-preset">Palm Sunset Bistro • Bali, Indonesia</span>
+          <span>Google Gemma 2 Local Inference</span>
+          <span id="print-header-date">Commercial Table Insert</span>
+        </div>
+      </header>
+
+      <div class="dish-cards-grid" id="dish-cards-grid">
+        <!-- Rendered dynamically by CardStudio via src/app.js -->
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p><strong>RasaLore AI</strong> — Cultural Menu Translation & Allergen Intelligence Studio.</p>
+      <div class="footer-links">
+        <a href="https://ai.google.dev/gemma" target="_blank" rel="noopener">Google Gemma 2</a>
+        <a href="https://ollama.com" target="_blank" rel="noopener">Ollama Local Engine</a>
+        <a href="https://dev.to/challenges" target="_blank" rel="noopener">Hacktoberfest 2026</a>
+      </div>
+      <p style="margin-top: 0.5rem; font-size: 0.78rem; color: var(--text-dim);">
+        100% Client-Side Modern ES Modules • Air-Gapped Recipe Privacy Guarantee (0 bytes transmitted)
+      </p>
+    </div>
+  </footer>
+
+  <!-- Application Bootstrap -->
+  <script type="module" src="src/app.js"></script>
+</body>
+</html>
